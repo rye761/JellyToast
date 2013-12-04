@@ -1,0 +1,6 @@
+JellyToast
+==========
+
+Reverts the look of Toast notifications in Android 4.4. Uses the Xposed Framework.
+
+Thanks to http://forum.xda-developers.com/showthread.php?t=2548861 as I was able to use this as a reference to fix my mod at one point :).
