@@ -14,7 +14,7 @@ public class Main implements IXposedHookZygoteInit{
     @Override
     public void initZygote(StartupParam startupParam) throws Throwable {
         XModuleResources modRes = XModuleResources.createInstance(startupParam.modulePath, (XResources)XResources.getSystem());
-        final Drawable toastBackground = modRes.getDrawable(R.drawable.toast_frame_holo);
+        final Drawable toastBackground = modRes.getDrawable(R.drawable.toast_bg_jellybean);
         XResources.hookSystemWideLayout("android", "layout", "transient_notification", new XC_LayoutInflated() {
 
             @Override
