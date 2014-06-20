@@ -25,6 +25,7 @@ public class Main implements IXposedHookZygoteInit{
         		LinearLayout layout = (LinearLayout) toast.getView();
         		layout.setBackground(toastBackground);
         		TextView message = (TextView) layout.findViewById(android.R.id.message);
+        		message.setPadding(10, 10, 10, 10);
         		message.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
                 message.setTypeface(Typeface.DEFAULT);
         	}
